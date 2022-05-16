@@ -1,1 +1,30 @@
-fcdfcdsfcdsf
+
+.dfvfvv{
+    background-color: yellow;
+    margin-top: -105px;
+    border-top-right-radius: 86px;
+}
+
+.enterprise{
+    width: 23%;
+    height: 64px;
+    background-color: white;
+    border-radius: 50%;
+}
+.enterprise img{
+    width: 100%;
+    height: 100%;
+}
+.dis-fd{
+    display: flex;
+    padding: 25px;
+}
+.arr-acc{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 12px
+}
+.span2{
+    font-size: 13px;
+}
