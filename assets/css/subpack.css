@@ -1,0 +1,39 @@
+.c-white{
+    color: white;
+}
+.cc-pp{
+    font-size: 15px;
+    color: white;
+}
+.content-ll-pack{
+    
+    margin-top: 12px;
+}
+
+.try{
+    padding-top: 24px;
+    text-align: center;
+}
+.try1{
+    padding-top: 24px;
+    text-align: center;
+}
+.try span{
+    background-color: black;
+    color: white;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 20px;
+}
+.s-pack{
+    font-size: 30px;
+    font-weight: 800;
+}
+.s-month{
+    font-size: 20px;
+    color: #0000007d;
+}
