@@ -261,4 +261,13 @@
 }
 .posi-icon-in-t {
     left: 13px;
-    top: 8px}
+    top: 8px
+}
+.imm{
+    width: 30%;
+}
+.plusI12{
+    position: absolute;
+    right: 34PX;
+    top: 63px;
+}
