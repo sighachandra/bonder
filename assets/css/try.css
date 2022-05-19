@@ -217,3 +217,48 @@
     padding-right: 5px;
     color: #A9A9AA;
   }
+
+  .pluspage{
+    width: 80%;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 4px 4px 4px rgba(116, 71, 117, 0.25);
+    
+    margin-left: 25PX;
+  }
+  .firstc{
+      width: 50%;
+      text-align: -webkit-center;
+  }
+  .phn-space-t{
+    background-color: hsl(0deg 0% 100% / 13%);
+    border: 1px solid #0000005e;
+    border-radius: 20px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 50px;
+  }
+  .w-70{
+      width: 70%;
+  }
+  .w-50{
+      width: 50%;
+  }
+  .w-45{
+      width: 45%;
+  }
+  .p-20{
+      margin-left: 20px;
+  }
+  .sub-wrap-t{
+    text-align: center;
+    padding-top: 24px;
+    border-bottom-width: 12px;
+    padding-bottom: 24px;
+}
+.space-fill{
+    margin-top: 24px;
+}
+.posi-icon-in-t {
+    left: 13px;
+    top: 8px}
