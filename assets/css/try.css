@@ -54,9 +54,7 @@
 .p-arr1{
     margin-left: 43px;
     margin-right: 56px;
-    margin-bottom: 25px;
-    
-    padding-bottom: 12px;
+    padding-bottom: 100px;
 }
 .cmpny-focus{
     background-color: #c58e0a99;
@@ -233,7 +231,7 @@
   .phn-space-t{
     background-color: hsl(0deg 0% 100% / 13%);
     border: 1px solid #0000005e;
-    border-radius: 20px;
+    border-radius: 4px;
     padding-bottom: 6px;
     padding-top: 6px;
     padding-left: 50px;
@@ -270,4 +268,67 @@
     position: absolute;
     right: 34PX;
     top: 63px;
+}
+textarea{
+    resize: none;
+    width: 80%;
+    height: 114px;
+    background-color: hsl(0deg 0% 100% / 13%);
+    margin-top: 25px;
+    border: 1px solid #0000005e;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-radius: 4px;
+}
+.addproductp{
+    text-align: end;
+    width: 80%;
+    color: #302c2c42;
+}
+.p-left-con{
+    padding-left: 0px;
+}
+.inPa{
+    display: flex;
+    flex-direction: column;
+}
+.paddInP{
+    margin: 30px 140px 30px 30px;
+}
+.imgW{
+    width: 10%;
+}
+.inPw{
+    width: 90%;
+    border-bottom: 1px solid rgba(40, 40, 40, 0.2);
+}
+.inPr{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
+.inpw22{
+    width: 80%
+}
+.span1-in{
+    font-size: 15px;
+    font-weight: 700;
+    color: #282828;
+}
+.span2-in{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+}
+.span3-in{
+    font-size: 10px;
+    line-height: 20px;
+    color: #8E8E93;
+}
+.span4-in{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #282828;
 }
