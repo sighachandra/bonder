@@ -10,5 +10,9 @@ window.addEventListener("scroll", function() {
 function displayMenu(){
 	document.getElementById("homeNav").style.display ="flex";
 }
+function hideMenu(){
+  document.getElementById("homeNav").style.display ="none";
+}
 
 document.getElementById("displayMenuBar").addEventListener("click", displayMenu);
+document.getElementById("closingIcon").addEventListener("click", hideMenu);
