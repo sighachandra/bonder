@@ -52,3 +52,29 @@
     left: 13px;
     top: 8px;
 }
+.showReg{
+    display: block;
+}
+.show-m-reg{
+    display: none;
+}
+@media (max-width: 768px){
+ .phn-space_ss{
+    width: 100%; 
+ }
+ .sub-wrap-sub{
+     width: 100%;
+     padding-bottom: 70px;
+ }
+ .sub-left-img{
+     width: 100%;
+ }
+ .showReg{
+     display: none;
+ }
+ .show-m-reg{
+     display: block;
+     margin-top: 20px;
+     font-weight: 300;
+ }  
+}
