@@ -1,0 +1,15 @@
+.mainbb{
+    height: 330px;
+}
+.mainbb img{
+    height: 100%;
+    width: 100%;
+}
+.trypageside1 {
+    background-color: #F4AD01;
+    margin-top: -331px;
+    border-top-right-radius: 86px;
+}
+.img-p{
+    padding-right: 0px;
+}

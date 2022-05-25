@@ -292,6 +292,9 @@ textarea{
     display: flex;
     flex-direction: column;
 }
+.inpaN{
+    padding-bottom: 20px;
+}
 .paddInP{
     margin: 30px 140px 30px 30px;
 }
@@ -316,10 +319,33 @@ textarea{
     font-weight: 700;
     color: #282828;
 }
+.span1-inN{
+    font-size: 15px;
+    font-weight: 700;
+    color: #282828;
+}
 .span2-in{
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
+}
+.span2-inN{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #241b1b8a;
+}
+.noti-arr{
+    display: flex;
+    align-items: center;
+}
+.notiAlert{
+    height: 8px;
+    width: 8px;
+    background-color: red;
+    border-radius: 50%;
+    margin-bottom: 7px;
+    margin-left: 2px;
 }
 .span3-in{
     font-size: 10px;
