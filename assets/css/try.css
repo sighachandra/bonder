@@ -358,3 +358,43 @@ textarea{
     line-height: 29px;
     color: #282828;
 }
+.cm-bb-mm{
+    display: none;
+}
+.cm-wv{
+    display: block;
+}
+@media (max-width: 768px){
+    .trypageside{
+        background-color: transparent;
+        margin-top: 0px;
+        border-top-right-radius: 0px;
+    }
+    .cm-mobile{
+        border: none;
+        background-color: #F4AD01;
+        font-size: 14px;
+        transition-duration: 0.2s;
+    }
+    .cm-img-mm{
+        padding-bottom: 4px;
+        padding-right: 4px;
+    }
+    .cm-text{
+        padding: 10px 25px 10px 25px;
+        border-radius: 20px;
+    }
+    .cm-icon{
+        padding: 10px;
+        border-radius: 50%;
+    }
+    .cm-text-hs{
+        display: none;
+    }
+    .cm-bb-mm{
+        display: block;
+    }
+    .cm-wv{
+        display: none;
+    }    
+}
