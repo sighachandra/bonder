@@ -1,7 +1,10 @@
 body {
     background-color: rgba(244, 173, 1, 0.25);
+}
+
+
     
-    }
+    
 .firstCont{
     height: 591px;
     background: #F4AD01;
@@ -251,7 +254,11 @@ textarea:focus, input:focus{
       justify-content: space-between;
       padding-top: 20px;
       padding-bottom: 20px;
-  }
+      background-color: rgb(252 234 191);;
+    }
+    
+    
+  
   .logoArr{
     display: flex;
     align-items: center;
