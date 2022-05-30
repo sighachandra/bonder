@@ -52,3 +52,12 @@ function HomeButtnDisplay(){
 
 document.getElementById("companyButtonMobile").addEventListener("click", companyButtnDisplay);
 document.getElementById("homeButtonMobile").addEventListener("click", HomeButtnDisplay);
+
+
+// display plus page
+function displayPLusPage(){
+   document.getElementById("adddingPart").classList.add("display-pluspage-n");
+   document.getElementById("displayingPage").classList.remove("display-pluspage-n");
+}
+
+document.getElementById("plusIdisplay").addEventListener("click", displayPLusPage);

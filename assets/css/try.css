@@ -109,7 +109,7 @@
 .plusI{
     position: absolute;
     right: 15PX;
-    top: 72px;
+    top: 77px;
 }
 .plusI1{
     position: absolute;
@@ -221,8 +221,15 @@
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 4px 4px 4px rgba(116, 71, 117, 0.25);
-    
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-left: 25PX;
+  }
+  .display-pluspage-n{
+      display: none;
+  }
+  .display-pluspage{
+      display: flex;
   }
   .firstc{
       width: 50%;
@@ -248,11 +255,15 @@
   .p-20{
       margin-left: 20px;
   }
+  .w-50-nb{
+      width: 50%;
+  }
   .sub-wrap-t{
     text-align: center;
     padding-top: 24px;
     border-bottom-width: 12px;
     padding-bottom: 24px;
+    display: block;
 }
 .space-fill{
     margin-top: 24px;
@@ -284,6 +295,7 @@ textarea{
     text-align: end;
     width: 80%;
     color: #302c2c42;
+    margin-bottom: 10px;
 }
 .p-left-con{
     padding-left: 0px;
@@ -302,6 +314,10 @@ textarea{
     width: 10%;
 }
 .inPw{
+    width: 90%;
+    border-bottom: 1px solid rgba(40, 40, 40, 0.2);
+}
+.inPw-p{
     width: 90%;
     border-bottom: 1px solid rgba(40, 40, 40, 0.2);
 }
@@ -364,6 +380,27 @@ textarea{
 .cm-wv{
     display: block;
 }
+.f-dis-addP{
+    display: flex;
+}
+.p-for-help{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #241b1b8a;
+}
+.cont-help-ls{
+    background-color: #282828;
+    color: #E5E5E5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px 8px 20px;
+
+}
+.second-subscribe{
+    display: none;
+}
 @media (max-width: 768px){
     .trypageside{
         background-color: transparent;
@@ -393,8 +430,106 @@ textarea{
     }
     .cm-bb-mm{
         display: block;
+        padding-left: 30px;
+        padding-top: 20px;
     }
     .cm-wv{
         display: none;
-    }    
+    }
+    .f-dis-addP{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imageaddbox{
+        width: 75%;
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+    .imageI{
+        padding: 28px;
+    }
+    .addP{
+        font-size: 24px;
+    }
+    .imageI2{
+        width: 45%;
+        text-align: center;
+    }
+    .plusI1{
+        right: 13px;
+    }
+    .des-mm-sandin{
+        width: 50%;
+    }
+    .paddInP{
+        margin: 30px;
+    }
+    .inPw{
+        width: 100%;
+    }
+    .inpw22{
+        width: 100%;
+    }
+   
+    .imgW{
+        width: 20%;
+    }
+    .inPr{
+        padding-left: 0px;
+    }
+    .pay-ppp{
+        margin-left: 12px;
+    }
+    .pluspage{
+        flex-direction: column;
+        width: 90%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .firstc{
+        width: 100%;
+    }
+    .w-50-nb{
+        width: 100%;
+        margin-top: 25px;
+    }
+    .addproductp{
+        width: 100%;
+        text-align: center;
+    }
+    .imm{
+        width: 33%;
+        text-align: center;
+    }
+    .plusI12{
+        right: 4px;
+    }
+    .pp-for-imgpp{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .textaaa-align{
+        text-align: center;
+    }
+    .subscribe1{
+        width: 70%;
+        border: none;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-radius: 30px;
+        background-color: black;
+        color: #f4ad00;
+    
+    }
+    .second-subscribe{
+        text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    }
+    .sub-wrap-t{
+        display: none;
+    }
 }
