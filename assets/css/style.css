@@ -302,7 +302,79 @@ textarea:focus, input:focus{
 .closind-ic{
     display: none;
 }
-@media (max-width: 768px){
+@media (min-width: 768px) and (max-width: 991.98px){
+    .navButt{
+        display: block;
+        padding-right: 12px;
+    }
+    .navbarArran{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 17px;
+        background-color: #f4ad00;
+        padding-top: 165px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
+    .closind-ic{
+        display:block;
+        text-align: end;
+    }
+    .navButt button {
+        border: none;
+       
+        background-color: transparent;
+        font-size: 32px;
+        height: 50px;
+    }
+    .hiddEff{
+        display: none;
+    }
+    .imgTab{
+        width: 33%;
+    }
+    .wi-tab-100{
+        width: 100%;
+    }
+    .accontWidth{
+        width: 100%;
+    }
+    .footer-subH{
+        font-size: 20px;
+    }
+    .footer-subp{
+        font-size: 13px;
+    }
+    .nav-sub-p{
+        font-size: 13px;
+    }
+    .wrap-inbuttn{
+        width: 100%;
+    }
+    .p-f-ss {
+        font-size: 12px;
+    }
+    .com-cont{
+        margin: 50px 0px 50px 0px;
+    }
+    .tabpos{
+        width: 60%;
+    }
+    .tabpos input{
+        width: 100%;
+    }
+    .tabPLynn{
+        display: flex;
+    }
+    .tabRowww{
+        flex-direction: column;
+    }
+    .ww-tab-100{
+        width: 100% !important;
+    }
+}
+@media (max-width: 767px){
 .sticky{
     background-color: #FCEBBF;
     box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%)
