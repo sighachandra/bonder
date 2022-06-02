@@ -46,6 +46,12 @@
 .padd-contt1{
     padding: 35px 35px 60px 35px;
 }
+@media (min-width: 768px) and (max-width: 991.98px){
+    .try1-m{
+        display: flex;
+        flex-direction: column;
+    } 
+}
 @media (max-width: 768px){
 .accontWidth1{
     width: 100%;

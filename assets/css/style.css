@@ -302,6 +302,16 @@ textarea:focus, input:focus{
 .closind-ic{
     display: none;
 }
+.howitwrkimg{
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.videoimgshow{
+    text-align: center;
+}
 @media (min-width: 768px) and (max-width: 991.98px){
     .navButt{
         display: block;
@@ -320,6 +330,8 @@ textarea:focus, input:focus{
     .closind-ic{
         display:block;
         text-align: end;
+        padding-top: 50px;
+        padding-right: 20px;
     }
     .navButt button {
         border: none;
@@ -373,6 +385,22 @@ textarea:focus, input:focus{
     .ww-tab-100{
         width: 100% !important;
     }
+    .navbarSPACE{
+        padding: 8px 20px 8px 20px;
+    }
+    .navbarArran{
+        width: 26%;
+    }
+    .w-mob-vv100{
+        width: 100%;
+    }
+    .howitwrkimg {
+        width: 100%;
+        height: 93%;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+}
 }
 @media (max-width: 767px){
 .sticky{
@@ -553,6 +581,9 @@ textarea:focus, input:focus{
     font-size: 32px;
     height: 50px;
 } 
+.w-mob-vv100{
+    width: 100%;
+}
 }
 
 

@@ -58,6 +58,13 @@
 .show-m-reg{
     display: none;
 }
+@media (min-width: 768px) and (max-width: 991.98px){
+    .show-m-reg{
+        display: block;
+        margin-top: 20px;
+        font-weight: 300;
+    }
+}
 @media (max-width: 768px){
  .phn-space_ss{
     width: 100%; 
