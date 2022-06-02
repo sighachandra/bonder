@@ -61,3 +61,11 @@ function displayPLusPage(){
 }
 
 document.getElementById("plusIdisplay").addEventListener("click", displayPLusPage);
+
+function homePageStartDisplay(){
+   // location.href = "#homeContentStart"
+   console.log(test);
+ }
+
+document.getElementById("homeBttn").addEventListener("click", homePageStartDisplay);
+
