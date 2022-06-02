@@ -1,6 +1,6 @@
 
 .phn-space_ss{
-    width: 56%;
+    width: 75%;
     background-color:  #f4ad010d;
 
     border: 1px solid black;
@@ -22,7 +22,7 @@
     margin-bottom: 21px;
 }
 .sub-wrap-sub{
-    width: 56%;
+    width: 75%;
     text-align: center;
     padding-top: 12px;
     border-bottom-width: 12px;
@@ -42,7 +42,7 @@
 }
 .sub-left-img{
     text-align: center;
-    width: 56%;
+    width: 75%;
 }
 .posi-icon-insub{
     left: 13px;
@@ -58,14 +58,59 @@
 .show-m-reg{
     display: none;
 }
+.lastimgtab{
+    display: none;
+}
+.nwwebmjj{
+    text-align: end;
+    margin-top: 38px;
+}
+.contentsubjj{
+    margin-bottom: 25px;
+}
 @media (min-width: 768px) and (max-width: 991.98px){
     .show-m-reg{
         display: block;
         margin-top: 20px;
         font-weight: 300;
     }
+    .subpahimg{
+        display: none;
+    }
+    .showReg{
+        display: block;
+    }
+    .show-m-reg{
+        display: none;
+    }
+    .col-subpage-t{
+        width: 50% !important;
+    }
+    .nwsubreg{
+        text-align: end;
+        font-size: 30px;
+        font-weight: 900;
+        margin-top: 50px;
+    }
+    .phn-space_ss{
+        width: 90%; 
+     }
+     .sub-wrap-sub{
+         width: 90%;
+         padding-bottom: 70px;
+     }
+     .sub-left-img{
+         width: 90%;
+     }
+     .lastimgtab{
+        display: block;
+    }
+    .lastimgtab img{
+        width: 100%;
+    }
+    
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
  .phn-space_ss{
     width: 100%; 
  }
@@ -83,5 +128,11 @@
      display: block;
      margin-top: 20px;
      font-weight: 300;
- }  
+ }
+ .subpahimg{
+     width: 100%;
+ }
+ .lastimgtab{
+    display: none;
+}  
 }
