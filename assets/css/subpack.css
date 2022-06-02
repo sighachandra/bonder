@@ -46,13 +46,56 @@
 .padd-contt1{
     padding: 35px 35px 60px 35px;
 }
+.lastimgtab{
+    display: none;
+}
 @media (min-width: 768px) and (max-width: 991.98px){
     .try1-m{
         display: flex;
         flex-direction: column;
     } 
+    .lastimgtab{
+        display: block;
+    }
+    .lastimgtab img{
+        width: 100%;
+    }
+    .packpaddg{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .accontWidth1{
+        width: 95%;
+    }
+    .padd-contt1{
+        padding: 35px 15px 35px 15px;
+    }
+    .cc-pp {
+        font-size: 11px;
+    }
+    .try{
+        padding-top: 8px;
+    }
+    .try span{
+        font-size: 14px;
+    }
+    .try1{
+        padding-top: 12px;
+    }
+    .s-pack{
+        font-size: 20px;
+    }
+    .s-month{
+        font-size: 15px;
+    }
+    .c-white h3{
+        font-size: 24px;
+    }
+    .ppfortabpack{
+        margin-bottom: 20px;
+    }
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
 .accontWidth1{
     width: 100%;
     margin-bottom: 30px;
@@ -90,5 +133,8 @@
 }
 .content-ll-pack{
     margin-top: 0px;
+}
+.lastimgtab{
+    display: none;
 }
 }
