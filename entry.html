@@ -5,15 +5,27 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/entry.css">
 </head>
-<body>
-    <div class="w-h-e">
+<body onload="onloadingDisplayImage()">
+    <div class="w-h-e1">
         <div class="h1-entry"></div>
-        <div class="container h1-entry">
-           <img src="assets/images/entry.png" alt="">
+        <div class="container h1-entry" id="picofEntry">
+           <img id="imageOfEntry" class="imglll" src="assets/images/entry.png" alt="">
+           <div class="bonderlogoentry">
+               <img src="assets/images/bonder logo-02.png" alt="">
+           </div>
         </div>
     </div>
     <div class="w-h-e lastE">
-        <img src="assets/images/Vector (4).png" alt="">
+        <img class="d-web" src="assets/images/Vector (4).png" alt="">
+        <img class="d-tabb" src="assets/images/Vector (4)ttat.png" alt="">
+        <img class="d-mmob" src="assets/images/Vector (4)ttat.png" alt="">
     </div>
+    <script>
+        
+        function onloadingDisplayImage(){
+             document.getElementById("imageOfEntry").classList.remove("imglll");
+             document.getElementById("imageOfEntry").classList.add("fullTT");   
+        }
+    </script>
 </body>
 </html>

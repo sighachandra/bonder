@@ -23,22 +23,22 @@
                    <div class="closind-ic">
                      <img id="closingIcon" src="assets/images/closingic.png">
                    </div>
-                   <div class="navbarSPACE">
+                   <div class="navbarSPACE" id="homeBttn">
                      <span>Home</span>
                    </div>
-                   <div class="navbarSPACE">
+                   <div class="navbarSPACE" id="aboutUsBttn">
                     <span>About Us</span>
                    </div>
-                   <div class="navbarSPACE">
+                   <div class="navbarSPACE" id="featureBttn">
                     <span>Features</span>
                    </div>
-                   <div class="navbarSPACE">
+                   <div class="navbarSPACE" id="howitBttn">
                     <span>How it Works</span>
                    </div>
-                   <div class="navbarSPACE">
+                   <div class="navbarSPACE" id="regisBttn">
                     <span>Registration</span>
                    </div>
-                   <div class="navbarSPACE">
+                   <div class="navbarSPACE" id="contactBttn">
                     <span>Contact Us</span>
                    </div>
                 </div>
@@ -230,6 +230,39 @@
          </div>
       
         <!-- End of the section -->
+        <script>
+          function homePageStartDisplay(){
+               location.href = "index.html#homeContentStart"
+               
+             }
+             function aboutPageStartDisplay(){
+               location.href = "index.html#aboutContentStart"
+              
+             }
+             function featurePageStartDisplay(){
+               location.href = "index.html#featureContentStart"
+               
+             }
+             function howitPageStartDisplay(){
+               location.href = "index.html#howitworkContentStart"
+               
+             }
+             function registerPageStartDisplay(){
+               location.href = "index.html#compRegContentStart"
+               
+             }
+             function contactPageStartDisplay(){
+               location.href = "index.html#contactContentStart"
+               console.log(test);
+             }  
+
+          document.getElementById("homeBttn").addEventListener("click", homePageStartDisplay);
+          document.getElementById("aboutUsBttn").addEventListener("click", aboutPageStartDisplay);
+          document.getElementById("featureBttn").addEventListener("click", featurePageStartDisplay);
+          document.getElementById("howitBttn").addEventListener("click", howitPageStartDisplay);
+          document.getElementById("regisBttn").addEventListener("click", registerPageStartDisplay);
+          document.getElementById("contactBttn").addEventListener("click", contactPageStartDisplay);
+       </script>
            <script src="assets/js/script.js"></script>
            <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
