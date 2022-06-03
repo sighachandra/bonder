@@ -68,6 +68,16 @@
 .contentsubjj{
     margin-bottom: 25px;
 }
+.arrowforoption{
+    display: flex;
+    justify-content: space-between;
+}
+.arowwepimg{
+    margin-right: 12px;
+}
+.arrowhissh{
+    display: none;
+}
 @media (min-width: 768px) and (max-width: 991.98px){
     .show-m-reg{
         display: block;

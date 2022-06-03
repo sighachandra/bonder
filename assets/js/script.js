@@ -62,10 +62,50 @@ function displayPLusPage(){
 
 document.getElementById("plusIdisplay").addEventListener("click", displayPLusPage);
 
-function homePageStartDisplay(){
-   // location.href = "#homeContentStart"
-   console.log(test);
- }
+//adding link to the inner pages
 
-document.getElementById("homeBttn").addEventListener("click", homePageStartDisplay);
+// =============for company home==============//
+ 
+function companyHome(){
+ 
+   var classDetect = document.getElementsByClassName("cmpny-focus");
+      for(var i = 0; i < classDetect.length; i++){
+         classDetect[i].classList.remove('cmpny-focus');
+      }
+      document.getElementById("companyHome").classList.add("cmpny-focus");
+}
+document.getElementById("companyHome").addEventListener("click", companyHome);
 
+
+function paymentHistory(){
+ 
+   var classDetect = document.getElementsByClassName("cmpny-focus");
+      for(var i = 0; i < classDetect.length; i++){
+         classDetect[i].classList.remove('cmpny-focus');
+      }
+      document.getElementById("paymentHistory").classList.add("cmpny-focus");
+}
+
+document.getElementById("paymentHistory").addEventListener("click", paymentHistory);
+
+function notificationClick(){
+ 
+   var classDetect = document.getElementsByClassName("cmpny-focus");
+      for(var i = 0; i < classDetect.length; i++){
+         classDetect[i].classList.remove('cmpny-focus');
+      }
+      document.getElementById("notiFications").classList.add("cmpny-focus");
+}
+
+document.getElementById("notiFications").addEventListener("click", notificationClick);
+
+function helpClick(){
+ 
+   var classDetect = document.getElementsByClassName("cmpny-focus");
+      for(var i = 0; i < classDetect.length; i++){
+         classDetect[i].classList.remove('cmpny-focus');
+      }
+      document.getElementById("helpBlock").classList.add("cmpny-focus");
+}
+
+document.getElementById("helpBlock").addEventListener("click", helpClick);

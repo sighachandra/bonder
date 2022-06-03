@@ -78,8 +78,13 @@
                             <div class="pos-rel pos-m">
                                 <div class="phn-space_ss">
                                     <div class="drop-in-c">
-                                        <span>Category</span>
-                                        <div class="c-list-ar">
+                                        <div class="arrowforoption">
+                                            <span>Category</span>
+                                            <div class="arowwepimg">
+                                                <img id="arrowImage" src="assets/images/DOWNarr.png"/>
+                                            </div>
+                                        </div>
+                                        <div id="listOfItems" class="c-list-ar arrowhissh">
                                             <span>Mines and Crushes</span>
                                             <span>Hollow Bricks Company</span>
                                             <span>Cement Dealers</span>
@@ -194,6 +199,7 @@
                </div>
              </div>
         </div>
+        
      
        <!-- End of the section -->
        <script>
@@ -219,7 +225,7 @@
            }
            function contactPageStartDisplay(){
              location.href = "index.html#contactContentStart"
-             console.log(test);
+             
            }  
 
         document.getElementById("homeBttn").addEventListener("click", homePageStartDisplay);
@@ -228,6 +234,27 @@
         document.getElementById("howitBttn").addEventListener("click", howitPageStartDisplay);
         document.getElementById("regisBttn").addEventListener("click", registerPageStartDisplay);
         document.getElementById("contactBttn").addEventListener("click", contactPageStartDisplay);
+
+
+        var toggle = 1;
+        function togglingArrow(){
+            var arrowImageDetect = document.getElementById("arrowImage").src;
+             
+            if(toggle === 1){
+                document.getElementById("arrowImage").src = "assets/images/leftARR.png";
+                document.getElementById("listOfItems").classList.remove("arrowhissh");
+                toggle = 0;
+                
+            }
+            else if(toggle === 0){
+                document.getElementById("arrowImage").src = "assets/images/DOWNarr.png";
+                document.getElementById("listOfItems").classList.add("arrowhissh");
+                toggle = 1;
+            }
+            
+            
+        }
+        document.getElementById("arrowImage").addEventListener("click", togglingArrow);
      </script>
        <script src="assets/js/script.js"></script>
        <script src="assets/js/bootstrap.bundle.min.js"></script>             
