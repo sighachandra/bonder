@@ -50,8 +50,13 @@ function HomeButtnDisplay(){
    selectedCompButton.classList.add("cm-icon");
 }
 
+function cmpnyHomeButtnclick(){
+   location.href = "/bonder/try.html";
+}
+
 document.getElementById("companyButtonMobile").addEventListener("click", companyButtnDisplay);
 document.getElementById("homeButtonMobile").addEventListener("click", HomeButtnDisplay);
+document.getElementById("homeButtonMobile").addEventListener("click", cmpnyHomeButtnclick);
 
 
 // display plus page
@@ -73,9 +78,10 @@ function companyHome(){
          classDetect[i].classList.remove('cmpny-focus');
       }
       document.getElementById("companyHome").classList.add("cmpny-focus");
+      
 }
 document.getElementById("companyHome").addEventListener("click", companyHome);
-
+document.getElementById("companyHome").addEventListener("click", cmpnyHomeButtnclick);
 
 function paymentHistory(){
  

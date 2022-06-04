@@ -81,55 +81,64 @@
                  </div>
                </div>
                      <!-- company portion -->
-               <div>
-                  <div class="">
-                    <div class="p-arr f-d">
-                       <div class="sideimg">
-                         <img src="assets/images/compName.png" alt="">
+                     <div>
+                        <div  id="companyHome">
+                          <div class="p-arr f-d">
+                             <div class="sideimg">
+                               <img src="assets/images/compName.png" alt="">
+                             </div>
+                             <div  class="Lumbung">
+                              <span class="">Company Home</span>
+                              <span class="span2">check your previous trip payment</span>
+                             </div>
+                          </div>
                        </div>
-                       <div class="Lumbung">
-                        <span class="">Company Home</span>
-                        <span class="span2">check your previous trip payment</span>
+                       <div id="paymentHistory">
+                         <div class="p-arr f-d">
+                           <div class="sideimg">
+                             <img src="assets/images/payment.png" alt="">
+                           </div>
+                           <div class="Lumbung">
+                              <span class="">Payment History</span>
+                              <span class="span2">check your previous trip payment</span>
+                           </div>
+                         </div>
                        </div>
-                    </div>
-                 </div>
-                 <div class="p-arr f-d">
-                     <div class="sideimg">
-                       <img src="assets/images/payment.png" alt="">
-                     </div>
-                     <div class="Lumbung">
-                        <span class="">Payment History</span>
-                        <span class="span2">check your previous trip payment</span>
-                     </div>
-                 </div>
-                <div class="p-arr f-d">
-                   <div class="sideimg">
-                      <img src="assets/images/noti.png" alt="">
+                       <div id="notiFications">
+                        <div class="p-arr f-d">
+                          <div class="sideimg">
+                            <img src="assets/images/noti.png" alt="">
+                          </div>
+                          <div class="Lumbung">
+                            <span class="">Notifications</span>
+                            <span class="span2">check your previous trip payment</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="helpBlock">
+                        <div class="p-arr f-d">
+                          <div class="sideimg">
+                            <img src="assets/images/help.png" alt="">
+                          </div>
+                          <div class="Lumbung">
+                            <span class="">Help</span>
+                            <span class="span2">check your previous trip payment</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="logOut">
+                       <div class="p-arr1 f-d">
+                         <div class="sideimg">
+                          <img src="assets/images/fi_log-out.png" alt="">
+                         </div>
+                         <div class="Lumbung">
+                          <span class="">Logout</span>
+                          <span class="span2">check your previous trip payment</span>
+                         </div>
+                       </div>
+                      </div>
                    </div>
-                   <div class="Lumbung">
-                      <span class="">Notifications</span>
-                      <span class="span2">check your previous trip payment</span>
-                   </div>
-                </div>
-                <div class="p-arr f-d">
-                   <div class="sideimg">
-                      <img src="assets/images/help.png" alt="">
-                   </div>
-                   <div class="Lumbung">
-                      <span class="">Help</span>
-                      <span class="span2">check your previous trip payment</span>
-                   </div>
-                </div>
-                <div class="p-arr1 f-d">
-                  <div class="sideimg">
-                    <img src="assets/images/fi_log-out.png" alt="">
-                  </div>
-                  <div class="Lumbung">
-                    <span class="">Logout</span>
-                    <span class="span2">check your previous trip payment</span>
-                  </div>
-               </div>
-             </div>
+                          <!-- end -->
              </div>
                     <!-- end -->
 
@@ -350,6 +359,51 @@
          document.getElementById("howitBttn").addEventListener("click", howitPageStartDisplay);
          document.getElementById("regisBttn").addEventListener("click", registerPageStartDisplay);
          document.getElementById("contactBttn").addEventListener("click", contactPageStartDisplay);
+
+          
+function companyHome(){
+ 
+ var classDetect = document.getElementsByClassName("cmpny-focus");
+    for(var i = 0; i < classDetect.length; i++){
+       classDetect[i].classList.remove('cmpny-focus');
+    }
+    document.getElementById("companyHome").classList.add("cmpny-focus");
+}
+document.getElementById("companyHome").addEventListener("click", companyHome);
+
+
+function paymentHistory(){
+
+ var classDetect = document.getElementsByClassName("cmpny-focus");
+    for(var i = 0; i < classDetect.length; i++){
+       classDetect[i].classList.remove('cmpny-focus');
+    }
+    document.getElementById("paymentHistory").classList.add("cmpny-focus");
+}
+
+document.getElementById("paymentHistory").addEventListener("click", paymentHistory);
+
+function notificationClick(){
+
+ var classDetect = document.getElementsByClassName("cmpny-focus");
+    for(var i = 0; i < classDetect.length; i++){
+       classDetect[i].classList.remove('cmpny-focus');
+    }
+    document.getElementById("notiFications").classList.add("cmpny-focus");
+}
+
+document.getElementById("notiFications").addEventListener("click", notificationClick);
+
+function helpClick(){
+
+ var classDetect = document.getElementsByClassName("cmpny-focus");
+    for(var i = 0; i < classDetect.length; i++){
+       classDetect[i].classList.remove('cmpny-focus');
+    }
+    document.getElementById("helpBlock").classList.add("cmpny-focus");
+}
+
+document.getElementById("helpBlock").addEventListener("click", helpClick);
       </script>
            <script src="assets/js/script.js"></script>
            <script src="assets/js/bootstrap.bundle.min.js"></script>

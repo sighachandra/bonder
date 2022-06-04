@@ -80,69 +80,87 @@
                    </div>
                  </div>
                </div>
-                     <!-- company portion -->
-               <div>
-                  <div class="">
-                    <div class="p-arr f-d">
-                       <div class="sideimg">
-                         <img src="assets/images/compName.png" alt="">
-                       </div>
-                       <div class="Lumbung">
-                        <span class="">Company Home</span>
-                        <span class="span2">check your previous trip payment</span>
+                    <!-- company portion -->
+                    <div>
+                     <div  id="companyHome">
+                       <div class="p-arr f-d">
+                          <div class="sideimg">
+                            <img src="assets/images/compName.png" alt="">
+                          </div>
+                          <div  class="Lumbung">
+                           <span class="">Company Home</span>
+                           <span class="span2">check your previous trip payment</span>
+                          </div>
                        </div>
                     </div>
-                 </div>
-                 <div class="p-arr f-d">
-                     <div class="sideimg">
-                       <img src="assets/images/payment.png" alt="">
+                    <div id="paymentHistory">
+                      <div class="p-arr f-d">
+                        <div class="sideimg">
+                          <img src="assets/images/payment.png" alt="">
+                        </div>
+                        <div class="Lumbung">
+                           <span class="">Payment History</span>
+                           <span class="span2">check your previous trip payment</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="notiFications">
+                     <div class="p-arr f-d">
+                       <div class="sideimg">
+                         <img src="assets/images/noti.png" alt="">
+                       </div>
+                       <div class="Lumbung">
+                         <span class="">Notifications</span>
+                         <span class="span2">check your previous trip payment</span>
+                       </div>
                      </div>
-                     <div class="Lumbung">
-                        <span class="">Payment History</span>
-                        <span class="span2">check your previous trip payment</span>
-                     </div>
-                 </div>
-                <div class="p-arr f-d">
-                   <div class="sideimg">
-                      <img src="assets/images/noti.png" alt="">
                    </div>
-                   <div class="Lumbung">
-                      <span class="">Notifications</span>
-                      <span class="span2">check your previous trip payment</span>
+                   <div id="helpBlock">
+                     <div class="p-arr f-d">
+                       <div class="sideimg">
+                         <img src="assets/images/help.png" alt="">
+                       </div>
+                       <div class="Lumbung">
+                         <span class="">Help</span>
+                         <span class="span2">check your previous trip payment</span>
+                       </div>
+                     </div>
+                   </div>
+                   <div id="logOut">
+                    <div class="p-arr1 f-d">
+                      <div class="sideimg">
+                       <img src="assets/images/fi_log-out.png" alt="">
+                      </div>
+                      <div class="Lumbung">
+                       <span class="">Logout</span>
+                       <span class="span2">check your previous trip payment</span>
+                      </div>
+                    </div>
                    </div>
                 </div>
-                <div class="p-arr f-d">
-                   <div class="sideimg">
-                      <img src="assets/images/help.png" alt="">
-                   </div>
-                   <div class="Lumbung">
-                      <span class="">Help</span>
-                      <span class="span2">check your previous trip payment</span>
-                   </div>
-                </div>
-                <div class="p-arr1 f-d">
-                  <div class="sideimg">
-                    <img src="assets/images/fi_log-out.png" alt="">
-                  </div>
-                  <div class="Lumbung">
-                    <span class="">Logout</span>
-                    <span class="span2">check your previous trip payment</span>
-                  </div>
-               </div>
-             </div>
+                       <!-- end -->
              </div>
                     <!-- end -->
 
                <!-- mobile view portion  -->
              <div class="cm-bb-mm">
-                 <button id="homeButtonMobile" type="button" class="cm-mobile cm-text"><img class="cm-img-mm" src="assets/images/compName.png" alt=""><span id="homeTextMobile" >Home</span></button>
-                 <button id="companyButtonMobile" type="button" class="cm-mobile cm-icon"><img class="cm-img-mm" src="assets/images/mspeaker.png" alt=""><span id="companyTextMobile" class="cm-text-hs">Company</span></button>
+                 <button id="homeButtonMobile" type="button" class="cm-mobile cm-icon"><img class="cm-img-mm" src="assets/images/compName.png" alt=""><span id="homeTextMobile" class="cm-text-hs">Home</span></button>
+                 <button id="companyButtonMobile" type="button" class="cm-mobile cm-text"><img class="cm-img-mm" src="assets/images/mspeaker.png" alt=""><span id="companyTextMobile" >Company</span></button>
              </div>
                      <!-- end -->
            </div>
                     <!-- Begining of the intro package section -->
 
               <div class="col-md-9 ww-tab-100">
+               <div class="paddInP-tm-a f-d pageshfj">
+                  <div class="sideimg">
+                    <img src="assets/images/payment.png" alt="">
+                  </div>
+                  <div  class="Lumbung">
+                   <span class="ccmtmm">Payment History</span>
+                   <span class="span2">check your previous trip payment</span>
+                  </div>
+               </div>
                     <div class="f-d paddInP">
                         <div class="imgW">
                             <img src="assets/images/arrowup.png" alt="">
@@ -203,7 +221,7 @@
                   </div>
                   
               </div>
-              <div class="f-d paddInP">
+                  <div class="f-d paddInP">
                         <div class="imgW">
                             <img src="assets/images/arrowup.png" alt="">
                         </div>
@@ -222,7 +240,8 @@
                           </div> 
                         </div>
                         
-                    </div>
+                  </div>
+
                     <div class="f-d paddInP">
                      <div class="imgW">
                          <img src="assets/images/arrowup.png" alt="">
@@ -404,6 +423,56 @@
          document.getElementById("howitBttn").addEventListener("click", howitPageStartDisplay);
          document.getElementById("regisBttn").addEventListener("click", registerPageStartDisplay);
          document.getElementById("contactBttn").addEventListener("click", contactPageStartDisplay);
+
+          
+function companyHome(){
+ 
+ var classDetect = document.getElementsByClassName("cmpny-focus");
+    for(var i = 0; i < classDetect.length; i++){
+       classDetect[i].classList.remove('cmpny-focus');
+    }
+    document.getElementById("companyHome").classList.add("cmpny-focus");
+}
+document.getElementById("companyHome").addEventListener("click", companyHome);
+
+
+function paymentHistory(){
+
+ var classDetect = document.getElementsByClassName("cmpny-focus");
+    for(var i = 0; i < classDetect.length; i++){
+       classDetect[i].classList.remove('cmpny-focus');
+    }
+    document.getElementById("paymentHistory").classList.add("cmpny-focus");
+}
+
+document.getElementById("paymentHistory").addEventListener("click", paymentHistory);
+
+function notificationClick(){
+
+ var classDetect = document.getElementsByClassName("cmpny-focus");
+    for(var i = 0; i < classDetect.length; i++){
+       classDetect[i].classList.remove('cmpny-focus');
+    }
+    document.getElementById("notiFications").classList.add("cmpny-focus");
+}
+
+document.getElementById("notiFications").addEventListener("click", notificationClick);
+
+function helpClick(){
+
+ var classDetect = document.getElementsByClassName("cmpny-focus");
+    for(var i = 0; i < classDetect.length; i++){
+       classDetect[i].classList.remove('cmpny-focus');
+    }
+    document.getElementById("helpBlock").classList.add("cmpny-focus");
+}
+
+document.getElementById("helpBlock").addEventListener("click", helpClick);
+
+function cmpnyHomeButtnclick(){
+   location.href = "/bonder/try.html";
+}
+document.getElementById("companyHome").addEventListener("click", cmpnyHomeButtnclick);
       </script>
            <script src="assets/js/script.js"></script>
            <script src="assets/js/bootstrap.bundle.min.js"></script>

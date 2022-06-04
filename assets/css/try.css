@@ -47,7 +47,7 @@
 .p-arr{
     margin-left: 43px;
     margin-right: 56px;
-   
+    cursor: pointer;
     border-bottom: 1px solid rgba(40, 40, 40, 0.2);
     padding-bottom: 15px;
     padding-top: 15px;
@@ -404,6 +404,21 @@ textarea{
 .second-subscribe{
     display: none;
 }
+.p-arr2{
+       
+    cursor: pointer;
+    border-bottom: 1px solid rgba(40, 40, 40, 0.2);
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.p-arr3{
+    
+    padding-bottom: 100px;
+    padding-top: 15px;
+}
+.pageshfj{
+    display: none;
+}
 @media (min-width: 768px) and (max-width: 991.98px){
     .f-dis-addP {
         display: flex;
@@ -440,7 +455,7 @@ textarea{
     .cm-bb-mm{
         display: block;
         padding-left: 30px;
-        padding-top: 20px;
+        padding-top: 36px;
     }
     .cm-wv{
         display: none;
@@ -458,6 +473,29 @@ textarea{
     .plusI12{
         right: 14px;
     }
+    .p-arr2{
+       
+        cursor: pointer;
+        border-bottom: 1px solid rgba(40, 40, 40, 0.2);
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .p-arr3{
+        
+        padding-bottom: 100px;
+        padding-top: 15px;
+    }
+    .pageshfj{
+        display: flex;
+    }
+    .paddInP{
+        margin: 30px;
+    }
+    .paddInP-tm-a{
+        margin: 30px 30px 30px 50px;
+        padding-bottom: 12px;
+    border-bottom: 1px solid rgb(40 40 40 / 48%);
+}
 }
 @media (max-width: 767px){
     .trypageside{
@@ -490,7 +528,7 @@ textarea{
     .cm-bb-mm{
         display: block;
         padding-left: 30px;
-        padding-top: 20px;
+        padding-top: 36px;
     }
     .cm-wv{
         display: none;
@@ -590,5 +628,30 @@ textarea{
     }
     .sub-wrap-t{
         display: none;
+    }
+    .p-arr2{
+       
+        cursor: pointer;
+        border-bottom: 1px solid rgba(40, 40, 40, 0.2);
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .p-arr3{
+        
+        padding-bottom: 100px;
+        padding-top: 15px;
+    }
+    .pageshfj{
+        display: flex;
+    }
+    .paddInP-tm-a{
+        margin: 30px 30px 30px 50px;
+        padding-bottom: 12px;
+    border-bottom: 1px solid rgb(40 40 40 / 48%);
+
+    }
+    .ccmtmm{
+        font-size: 19px;
+    font-weight: 700;
     }
 }
