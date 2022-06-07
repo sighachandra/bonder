@@ -50,13 +50,10 @@ function HomeButtnDisplay(){
    selectedCompButton.classList.add("cm-icon");
 }
 
-function cmpnyHomeButtnclick(){
-   location.href = "/bonder/try.html";
-}
 
 document.getElementById("companyButtonMobile").addEventListener("click", companyButtnDisplay);
 document.getElementById("homeButtonMobile").addEventListener("click", HomeButtnDisplay);
-document.getElementById("homeButtonMobile").addEventListener("click", cmpnyHomeButtnclick);
+
 
 
 // display plus page
@@ -71,47 +68,3 @@ document.getElementById("plusIdisplay").addEventListener("click", displayPLusPag
 
 // =============for company home==============//
  
-function companyHome(){
- 
-   var classDetect = document.getElementsByClassName("cmpny-focus");
-      for(var i = 0; i < classDetect.length; i++){
-         classDetect[i].classList.remove('cmpny-focus');
-      }
-      document.getElementById("companyHome").classList.add("cmpny-focus");
-      
-}
-document.getElementById("companyHome").addEventListener("click", companyHome);
-document.getElementById("companyHome").addEventListener("click", cmpnyHomeButtnclick);
-
-function paymentHistory(){
- 
-   var classDetect = document.getElementsByClassName("cmpny-focus");
-      for(var i = 0; i < classDetect.length; i++){
-         classDetect[i].classList.remove('cmpny-focus');
-      }
-      document.getElementById("paymentHistory").classList.add("cmpny-focus");
-}
-
-document.getElementById("paymentHistory").addEventListener("click", paymentHistory);
-
-function notificationClick(){
- 
-   var classDetect = document.getElementsByClassName("cmpny-focus");
-      for(var i = 0; i < classDetect.length; i++){
-         classDetect[i].classList.remove('cmpny-focus');
-      }
-      document.getElementById("notiFications").classList.add("cmpny-focus");
-}
-
-document.getElementById("notiFications").addEventListener("click", notificationClick);
-
-function helpClick(){
- 
-   var classDetect = document.getElementsByClassName("cmpny-focus");
-      for(var i = 0; i < classDetect.length; i++){
-         classDetect[i].classList.remove('cmpny-focus');
-      }
-      document.getElementById("helpBlock").classList.add("cmpny-focus");
-}
-
-document.getElementById("helpBlock").addEventListener("click", helpClick);

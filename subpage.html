@@ -114,7 +114,7 @@
                                 <img class="pos-abs posi-icon-insub" src="assets/images/Frame.png" alt="">
                             </div>
                             <div class="sub-wrap-sub">
-                                <button class="subscribe-sub" type="button">Submit</button>
+                                <button id="subpageSubmit" class="subscribe-sub" type="button">Submit</button>
                              </div>
                          </div>
                          <div></div>
@@ -255,6 +255,11 @@
             
         }
         document.getElementById("arrowImage").addEventListener("click", togglingArrow);
+
+        function directedToSubpack(){
+          location.href = "/bonder/subpack.html";
+        }
+        document.getElementById("subpageSubmit").addEventListener("click", directedToSubpack);
      </script>
        <script src="assets/js/script.js"></script>
        <script src="assets/js/bootstrap.bundle.min.js"></script>             

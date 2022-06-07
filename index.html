@@ -274,7 +274,7 @@
                             <img class="pos-abs posi-icon-in" src="assets/images/phn.png" alt="">
                            </div>
                           <div class="submit-m">
-                            <button type="button" class="submit">Submit</button>
+                            <button id="submitButton" type="button" class="submit">Submit</button>
                           </div>
                            
                          </div>
@@ -382,6 +382,11 @@
            document.getElementById("howitBttn").addEventListener("click", howitPageStartDisplay);
            document.getElementById("regisBttn").addEventListener("click", registerPageStartDisplay);
            document.getElementById("contactBttn").addEventListener("click", contactPageStartDisplay);
+
+           function directedToSubpage(){
+             location.href = "/bonder/subpage.html";
+           }
+          document.getElementById("submitButton").addEventListener("click", directedToSubpage);
         </script>
         <script src="assets/js/script.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>

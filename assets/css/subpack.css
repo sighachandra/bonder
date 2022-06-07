@@ -1,3 +1,19 @@
+.animationpack{
+    animation-duration: 3s;
+    animation-name: fadeInAnimationww;
+    animation-iteration-count: 1;
+}
+@keyframes fadeInAnimationww{
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: 4%;
+        width: 100%;
+      }
+}
 .c-white{
     color: white;
 }

@@ -70,7 +70,7 @@
                  <div class="enterprise">
                    <img  src="assets/images/Ellipse 48.png">
                  </div>
-                 <div class="f-d pen-bb">
+                 <div class="f-d pen-bb" id="companyCoverRedirct">
                    <div class="arr-acc">
                        <span>Sai Raghavendra enterprises</span>
                        <span class="span2">Account Setting</span>
@@ -115,7 +115,7 @@
                         </div>
                       </div>
                     </div>
-                    <div id="helpBlock">
+                    <div id="helpBlock" class="cmpny-focus">
                       <div class="p-arr f-d">
                         <div class="sideimg">
                           <img src="assets/images/help.png" alt="">
@@ -133,7 +133,7 @@
                        </div>
                        <div class="Lumbung">
                         <span class="">Logout</span>
-                        <span class="span2">check your previous trip payment</span>
+                       
                        </div>
                      </div>
                     </div>
@@ -144,14 +144,23 @@
 
                <!-- mobile view portion  -->
              <div class="cm-bb-mm">
-                 <button id="homeButtonMobile" type="button" class="cm-mobile cm-text"><img class="cm-img-mm" src="assets/images/compName.png" alt=""><span id="homeTextMobile" >Home</span></button>
-                 <button id="companyButtonMobile" type="button" class="cm-mobile cm-icon"><img class="cm-img-mm" src="assets/images/mspeaker.png" alt=""><span id="companyTextMobile" class="cm-text-hs">Company</span></button>
+                 <button id="homeButtonMobile" type="button" class="cm-mobile cm-icon"><img class="cm-img-mm" src="assets/images/compName.png" alt=""><span id="homeTextMobile" class="cm-text-hs">Home</span></button>
+                 <button id="companyButtonMobile" type="button" class="cm-mobile cm-text"><img class="cm-img-mm" src="assets/images/mspeaker.png" alt=""><span id="companyTextMobile" >Company</span></button>
              </div>
                      <!-- end -->
            </div>
                     <!-- Begining of the intro package section -->
 
               <div class="col-md-9 ww-tab-100">
+                <div class="paddInP-tm-a f-d pageshfj">
+                  <div class="sideimg">
+                    <img src="assets/images/help.png" alt="">
+                  </div>
+                  <div  class="Lumbung">
+                   <span class="ccmtmm">Help</span>
+                   <span class="span2">check your previous trip payment</span>
+                  </div>
+               </div>
                   <div class="paddInP">
                       <p class="p-for-help">Lorem ipsum dolor sit amet. In harum dolores qui necessitatibus voluptatibus aut quisquam iste. Ab numquam reiciendis cum debitis nostrum et quis tenetur est ipsa minus inventore iste ea expedita optio ut perspiciatis placeat. Qui eveniet unde ut doloribus dolorem ut consequatur molestiae quo cupiditate recusandae. Sed velit ipsam ut dolorem nisi aut nisi perspiciatis a distinctio aperiam.
 
@@ -240,6 +249,10 @@
       
         <!-- End of the section -->
         <script>
+
+           //========== Header link distribution ============//
+
+
           function homePageStartDisplay(){
                location.href = "index.html#homeContentStart"
                
@@ -272,6 +285,10 @@
           document.getElementById("regisBttn").addEventListener("click", registerPageStartDisplay);
           document.getElementById("contactBttn").addEventListener("click", contactPageStartDisplay);
 
+            //========= End of the section===========//
+
+             // ===========Sidebar button styling=============//
+
           function companyHome(){
  
  var classDetect = document.getElementsByClassName("cmpny-focus");
@@ -279,6 +296,7 @@
        classDetect[i].classList.remove('cmpny-focus');
     }
     document.getElementById("companyHome").classList.add("cmpny-focus");
+    cmpnyHomeButtnclick();
 }
 document.getElementById("companyHome").addEventListener("click", companyHome);
 
@@ -290,6 +308,7 @@ function paymentHistory(){
        classDetect[i].classList.remove('cmpny-focus');
     }
     document.getElementById("paymentHistory").classList.add("cmpny-focus");
+    payHisButtnClick();
 }
 
 document.getElementById("paymentHistory").addEventListener("click", paymentHistory);
@@ -301,6 +320,7 @@ function notificationClick(){
        classDetect[i].classList.remove('cmpny-focus');
     }
     document.getElementById("notiFications").classList.add("cmpny-focus");
+    notificationButtnClick();
 }
 
 document.getElementById("notiFications").addEventListener("click", notificationClick);
@@ -312,9 +332,40 @@ function helpClick(){
        classDetect[i].classList.remove('cmpny-focus');
     }
     document.getElementById("helpBlock").classList.add("cmpny-focus");
+    helpButtnClicking();
 }
 
 document.getElementById("helpBlock").addEventListener("click", helpClick);
+document.getElementById("logOut").addEventListener("click", homePageStartDisplay);
+document.getElementById("companyCoverRedirct").addEventListener("click", companyInnerpageClick);
+
+      //  =========end of the section============//
+
+              //============ sidebarButton redirecting============== //
+function companyInnerpageClick(){
+  location.href = "/bonder/inner.html";
+}
+function cmpnyHomeButtnclick(){
+   location.href = "/bonder/tryfirst.html";
+}
+function payHisButtnClick(){
+  location.href = "/bonder/payhis.html";
+}
+function notificationButtnClick(){
+  location.href = "/bonder/notifi.html";
+}
+function helpButtnClicking(){
+  location.href = "/bonder/help.html";
+}
+document.getElementById("homeButtonMobile").addEventListener("click", cmpnyHomeButtnclick);
+
+function companyMobClicking(){
+  location.href = "/bonder/mobilecom.html";
+}
+document.getElementById("companyButtonMobile").addEventListener("click", companyMobClicking);
+
+        // =========end of the section==============//
+
        </script>
            <script src="assets/js/script.js"></script>
            <script src="assets/js/bootstrap.bundle.min.js"></script>

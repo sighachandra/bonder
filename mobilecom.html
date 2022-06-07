@@ -167,7 +167,7 @@
                              <div class="imgelab">
                               <img  src="assets/images/sselab.png" alt="">
                              </div>
-                             <div class="f-d pen-bb">
+                             <div class="f-d pen-bb" id="sreeragavCover">
                               <div class="arr-acc">
                                   <span class="sai-rag">Sai Raghavendra enterprises</span>
                                  
@@ -179,43 +179,51 @@
                           </div>
 
                           <div>
-                           
-                           <div class="p-arr2 f-d">
-                               <div class="sideimg">
-                                 <img src="assets/images/payment.png" alt="">
-                               </div>
-                               <div class="Lumbung">
-                                  <span class="">Payment History</span>
-                                  <span class="span2">check your previous trip payment</span>
-                               </div>
+                           <div id="mobilePaymentHis">
+                            <div class="p-arr2 f-d">
+                              <div class="sideimg">
+                                <img src="assets/images/payment.png" alt="">
+                              </div>
+                              <div class="Lumbung">
+                                 <span class="">Payment History</span>
+                                 <span class="span2">check your previous trip payment</span>
+                              </div>
+                            </div>
                            </div>
-                          <div class="p-arr2 f-d">
-                             <div class="sideimg">
-                                <img src="assets/images/noti.png" alt="">
-                             </div>
-                             <div class="Lumbung">
-                                <span class="">Notifications</span>
-                                <span class="span2">check your previous trip payment</span>
-                             </div>
+                          <div id="mobileNotification">
+                            <div class="p-arr2 f-d">
+                              <div class="sideimg">
+                                 <img src="assets/images/noti.png" alt="">
+                              </div>
+                              <div class="Lumbung">
+                                 <span class="">Notifications</span>
+                                 <span class="span2">check your previous trip payment</span>
+                              </div>
+                           </div>
                           </div>
-                          <div class="p-arr2 f-d">
-                             <div class="sideimg">
-                                <img src="assets/images/help.png" alt="">
-                             </div>
-                             <div class="Lumbung">
-                                <span class="">Help</span>
-                                <span class="span2">check your previous trip payment</span>
-                             </div>
+                          <div id="mobileHelp">
+                            <div class="p-arr2 f-d">
+                              <div class="sideimg">
+                                 <img src="assets/images/help.png" alt="">
+                              </div>
+                              <div class="Lumbung">
+                                 <span class="">Help</span>
+                                 <span class="span2">check your previous trip payment</span>
+                              </div>
+                           </div>
                           </div>
-                          <div class="p-arr3 f-d">
-                            <div class="sideimg">
-                              <img src="assets/images/fi_log-out.png" alt="">
-                            </div>
-                            <div class="Lumbung">
-                              <span class="">Logout</span>
-                              <span class="span2">check your previous trip payment</span>
-                            </div>
-                         </div>
+                          
+                          <div id="mobileLogOut">
+                            <div class="p-arr3 f-d">
+                              <div class="sideimg">
+                                <img src="assets/images/fi_log-out.png" alt="">
+                              </div>
+                              <div class="Lumbung">
+                                <span class="">Logout</span>
+                                <span class="span2">check your previous trip payment</span>
+                              </div>
+                           </div>
+                          </div>
                        </div>
 
                           <div></div>
@@ -289,6 +297,9 @@
          
            <!-- End of the section -->
            <script>
+
+              //========== Header link distribution ============//
+
             function homePageStartDisplay(){
                  location.href = "index.html#homeContentStart"
                  
@@ -321,13 +332,18 @@
             document.getElementById("regisBttn").addEventListener("click", registerPageStartDisplay);
             document.getElementById("contactBttn").addEventListener("click", contactPageStartDisplay);
 
-            function companyHome(){
+             //========= End of the section===========//
+
+              // ===========Sidebar button styling=============//
+
+function companyHome(){
  
  var classDetect = document.getElementsByClassName("cmpny-focus");
     for(var i = 0; i < classDetect.length; i++){
        classDetect[i].classList.remove('cmpny-focus');
     }
     document.getElementById("companyHome").classList.add("cmpny-focus");
+    cmpnyHomeButtnclick();
 }
 document.getElementById("companyHome").addEventListener("click", companyHome);
 
@@ -339,6 +355,7 @@ function paymentHistory(){
        classDetect[i].classList.remove('cmpny-focus');
     }
     document.getElementById("paymentHistory").classList.add("cmpny-focus");
+    payHisButtnClick();
 }
 
 document.getElementById("paymentHistory").addEventListener("click", paymentHistory);
@@ -350,6 +367,7 @@ function notificationClick(){
        classDetect[i].classList.remove('cmpny-focus');
     }
     document.getElementById("notiFications").classList.add("cmpny-focus");
+    notificationButtnClick();
 }
 
 document.getElementById("notiFications").addEventListener("click", notificationClick);
@@ -361,9 +379,52 @@ function helpClick(){
        classDetect[i].classList.remove('cmpny-focus');
     }
     document.getElementById("helpBlock").classList.add("cmpny-focus");
+    helpButtnClicking();
 }
 
 document.getElementById("helpBlock").addEventListener("click", helpClick);
+document.getElementById("logOut").addEventListener("click", homePageStartDisplay);
+
+      //  =========end of the section============//
+
+        //============ sidebarButton redirecting============== //
+function companyInnerpageClick(){
+  location.href = "/bonder/inner.html";
+}
+function cmpnyHomeButtnclick(){
+   location.href = "/bonder/tryfirst.html";
+}
+function payHisButtnClick(){
+  location.href = "/bonder/payhis.html";
+}
+function notificationButtnClick(){
+  location.href = "/bonder/notifi.html";
+}
+function helpButtnClicking(){
+  location.href = "/bonder/help.html";
+}
+document.getElementById("homeButtonMobile").addEventListener("click", cmpnyHomeButtnclick);
+
+function companyMobClicking(){
+  location.href = "/bonder/mobilecom.html";
+}
+document.getElementById("companyButtonMobile").addEventListener("click", companyMobClicking);
+
+        // =========end of the section==============//
+
+
+        // ========redirection in mobile view===============//
+
+        //============ sidebarButton redirecting============== //
+document.getElementById("sreeragavCover").addEventListener("click", companyInnerpageClick);      
+document.getElementById("mobilePaymentHis").addEventListener("click", payHisButtnClick);
+document.getElementById("mobileNotification").addEventListener("click", notificationButtnClick);
+document.getElementById("mobileHelp").addEventListener("click", helpButtnClicking);
+document.getElementById("mobileLogOut").addEventListener("click", homePageStartDisplay);
+
+
+
+        // ===========end of the section===========//
          </script>
            <script src="assets/js/script.js"></script>
            <script src="assets/js/bootstrap.bundle.min.js"></script>
