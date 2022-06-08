@@ -76,7 +76,7 @@
                     <div class="enterprise">
                       <img  src="assets/images/Ellipse 48.png">
                     </div>
-                    <div class="f-d pen-bb">
+                    <div class="f-d pen-bb" id="companyCoverRedirct">
                       <div class="arr-acc">
                           <span>Sai Raghavendra enterprises</span>
                           <span class="span2">Account Setting</span>
@@ -139,7 +139,7 @@
                        </div>
                        <div class="Lumbung">
                         <span class="">Logout</span>
-                        <span class="span2">check your previous trip payment</span>
+                        
                        </div>
                      </div>
                     </div>
@@ -291,7 +291,10 @@
          
            <!-- End of the section -->
            <script>
-            function homePageStartDisplay(){
+              //========== Header link distribution ============//
+
+
+              function homePageStartDisplay(){
                  location.href = "index.html#homeContentStart"
                  
                }
@@ -315,7 +318,7 @@
                  location.href = "index.html#contactContentStart"
                  console.log(test);
                }  
-  
+   
             document.getElementById("homeBttn").addEventListener("click", homePageStartDisplay);
             document.getElementById("aboutUsBttn").addEventListener("click", aboutPageStartDisplay);
             document.getElementById("featureBttn").addEventListener("click", featurePageStartDisplay);
@@ -323,49 +326,89 @@
             document.getElementById("regisBttn").addEventListener("click", registerPageStartDisplay);
             document.getElementById("contactBttn").addEventListener("click", contactPageStartDisplay);
 
-  function companyHome(){
+
+               //========= End of the section===========/
+
+
+            // ===========Sidebar button styling=============//
+
+
+    function companyHome(){
  
  var classDetect = document.getElementsByClassName("cmpny-focus");
-    for(var i = 0; i < classDetect.length; i++){
-       classDetect[i].classList.remove('cmpny-focus');
-    }
-    document.getElementById("companyHome").classList.add("cmpny-focus");
+for(var i = 0; i < classDetect.length; i++){
+    classDetect[i].classList.remove('cmpny-focus');
+}
+document.getElementById("companyHome").classList.add("cmpny-focus");
+cmpnyHomeButtnclick();
 }
 document.getElementById("companyHome").addEventListener("click", companyHome);
 
 
 function paymentHistory(){
 
- var classDetect = document.getElementsByClassName("cmpny-focus");
-    for(var i = 0; i < classDetect.length; i++){
-       classDetect[i].classList.remove('cmpny-focus');
-    }
-    document.getElementById("paymentHistory").classList.add("cmpny-focus");
+var classDetect = document.getElementsByClassName("cmpny-focus");
+for(var i = 0; i < classDetect.length; i++){
+     classDetect[i].classList.remove('cmpny-focus');
+ }
+document.getElementById("paymentHistory").classList.add("cmpny-focus");
+payHisButtnClick();
 }
 
 document.getElementById("paymentHistory").addEventListener("click", paymentHistory);
 
 function notificationClick(){
 
- var classDetect = document.getElementsByClassName("cmpny-focus");
-    for(var i = 0; i < classDetect.length; i++){
-       classDetect[i].classList.remove('cmpny-focus');
-    }
-    document.getElementById("notiFications").classList.add("cmpny-focus");
+var classDetect = document.getElementsByClassName("cmpny-focus");
+for(var i = 0; i < classDetect.length; i++){
+classDetect[i].classList.remove('cmpny-focus');
+}
+document.getElementById("notiFications").classList.add("cmpny-focus");
+notificationButtnClick();
 }
 
 document.getElementById("notiFications").addEventListener("click", notificationClick);
 
 function helpClick(){
 
- var classDetect = document.getElementsByClassName("cmpny-focus");
-    for(var i = 0; i < classDetect.length; i++){
-       classDetect[i].classList.remove('cmpny-focus');
-    }
-    document.getElementById("helpBlock").classList.add("cmpny-focus");
+var classDetect = document.getElementsByClassName("cmpny-focus");
+for(var i = 0; i < classDetect.length; i++){
+classDetect[i].classList.remove('cmpny-focus');
+}
+document.getElementById("helpBlock").classList.add("cmpny-focus");
+helpButtnClicking();
 }
 
 document.getElementById("helpBlock").addEventListener("click", helpClick);
+document.getElementById("logOut").addEventListener("click", homePageStartDisplay);
+document.getElementById("companyCoverRedirct").addEventListener("click", companyInnerpageClick);
+
+             //  =========end of the section============//
+
+                   //============ sidebarButton redirecting============== //
+function companyInnerpageClick(){
+  location.href = "/bonder/inner.html";
+}
+function cmpnyHomeButtnclick(){
+   location.href = "/bonder/tryfirst.html";
+}
+function payHisButtnClick(){
+  location.href = "/bonder/payhis.html";
+}
+function notificationButtnClick(){
+  location.href = "/bonder/notifi.html";
+}
+function helpButtnClicking(){
+  location.href = "/bonder/help.html";
+}
+document.getElementById("homeButtonMobile").addEventListener("click", cmpnyHomeButtnclick);
+
+function companyMobClicking(){
+  location.href = "/bonder/mobilecom.html";
+}
+document.getElementById("companyButtonMobile").addEventListener("click", companyMobClicking);
+
+        // =========end of the section==============//
          </script>
            <script src="assets/js/script.js"></script>
            <script src="assets/js/bootstrap.bundle.min.js"></script>

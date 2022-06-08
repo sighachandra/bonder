@@ -70,7 +70,7 @@
                           <p class="cc-pp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
                         <div class="try1-m">
-                          <div class="try">
+                          <div class="try" id="tryOneMnth">
                             <span>Try 1 month</span>
                           </div>
                           <div class="try1">
@@ -224,6 +224,12 @@
           document.getElementById("howitBttn").addEventListener("click", howitPageStartDisplay);
           document.getElementById("regisBttn").addEventListener("click", registerPageStartDisplay);
           document.getElementById("contactBttn").addEventListener("click", contactPageStartDisplay);
+          
+
+          function tryClickRedirecting(){
+             location.href = "/bonder/tryfirst.html";
+          }
+          document.getElementById("tryOneMnth").addEventListener("click", tryClickRedirecting);
        </script>
        <script src="assets/js/script.js"></script>
        <script src="assets/js/bootstrap.bundle.min.js"></script> 
